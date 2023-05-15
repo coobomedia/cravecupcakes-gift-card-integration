@@ -1,0 +1,26 @@
+{
+    "open sans": {
+        "normal": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/OpenSans-Normal",
+        "bold": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/OpenSans-Bold",
+        "italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/OpenSans-Italic",
+        "bold_italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/OpenSans-BoldItalic"
+    },
+    "segoe": {
+        "normal": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/Segoe-Normal",
+        "bold": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/Segoe-Bold",
+        "italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/Segoe-Italic",
+        "bold_italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/Segoe-BoldItalic"
+    },
+    "roboto slab": {
+        "normal": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/RobotoSlab-Normal",
+        "bold": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/RobotoSlab-Bold",
+        "italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/RobotoSlab-Italic",
+        "bold_italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/RobotoSlab-BoldItalic"
+    },
+    "currencies": {
+        "normal": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/currencies",
+        "bold": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/currencies",
+        "italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/currencies",
+        "bold_italic": "\/nas\/content\/live\/cravecupcakstg\/wp-content\/uploads\/wpo_wcpdf_52e5be52a48fd04dc6935c4bd52550dd\/fonts\/currencies"
+    }
+}

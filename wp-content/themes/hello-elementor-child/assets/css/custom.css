@@ -1,0 +1,144 @@
+/* ================== */
+/*Popup*/
+/* ================== */
+.order-type-radio {
+    display: flex;
+    justify-content: flex-start;
+}
+.order-type-radio div {
+    width: 50%;
+}
+.location-radio div {
+    width: 50%;
+}
+.location-radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.timeanddate div {
+    width: 50%;
+}
+.timeanddate {
+    display: flex;
+}
+.select_location {
+    padding: 25px 0;
+}
+input#date_sec, input#sel_time, .basic-info input {
+    padding: 10px;
+    border: 2px solid rgb(216,238,231);
+}
+.delivery-form h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+/*Checkboxes*/
+/* Customize the label (the delivery-form-checkbox) */
+
+.delivery-form-checkbox {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* Hide the browser's default checkbox */
+.delivery-form-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  border: 2px solid rgb(216,238,231);
+}
+
+/* On mouse-over, add a grey background color */
+.delivery-form-checkbox:hover input ~ .checkmark {
+  background-color: rgb(216,238,231);
+}
+
+/* When the checkbox is checked, add a blue background */
+.delivery-form-checkbox input:checked ~ .checkmark {
+  background-color: transparent;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.delivery-form-checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.delivery-form-checkbox .checkmark:after {
+  left: 6px;
+  top: 4px;
+  width: 5px;
+  height: 10px;
+  border: solid rgb(216,238,231);
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+/*Delivery Address*/
+
+.cus_info {
+    display: flex;
+    flex-direction: column;
+    padding: 7px 30px;
+}
+div#delivery-address {
+    margin-top: 36%;
+    visibility: hidden;
+}
+.basic-info label {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/*// Close Button*/
+/*#et-boc .area-outer-wrap .da-close-wrap{
+    left: 15.4%;
+}*/
+#et-boc .area-outer-wrap[data-da-shadow=yes] [data-da-area]{
+    -webkit-box-shadow:  unset;
+    box-shadow:  unset;
+}
+
+/* Shop Page Loop */
+
+.cupcakes-grid {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.cupcakes-grid > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}

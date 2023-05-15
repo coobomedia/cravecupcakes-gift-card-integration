@@ -1,0 +1,41 @@
+.crave-table {
+  border-collapse: collapse;
+  width: 100%;
+margin-top:100px;
+}
+
+.crave-table td,
+.crave-table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.crave-table tr:nth-child(even) {
+  background-color: #e8e8e8;
+}
+
+.crave-table tr:hover {
+  background-color: #ddd;
+}
+
+.crave-table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #55B7B3;
+  color: #FFF;
+}
+.crave-table-btn {
+  background: #E43945;
+  border-color: #E43945;
+  color: #FFF;
+  cursor: pointer;
+}
+table.crave-table input {
+  width: 100%;
+  border: 0;
+}
+table.crave-table input:focus {
+  box-shadow: 0 0 0 1px #e43945 !important;
+  outline: 2px solid transparent !important;
+}

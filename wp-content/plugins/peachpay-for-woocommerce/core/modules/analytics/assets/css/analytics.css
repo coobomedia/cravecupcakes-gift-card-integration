@@ -1,0 +1,254 @@
+:root {
+	--pp-color: #21105D;
+}
+
+#wpcontent {
+	padding: 0;
+}
+
+.pp-analytics-nav-bar {
+	padding: 0 2rem 0 1rem;
+	background-color: white;
+	display: flex;
+	align-items: end;
+	color: #1d2327;
+}
+
+.pp-analytics-nav-bar-logo {
+	align-self: center;
+	margin-top: 2px;
+	margin-right: 0.5rem;
+}
+
+.pp-analytics-title {
+	width: fit-content;
+	margin-bottom: 0;
+	border-bottom: 3px solid transparent;
+	padding: 0 0 1.1rem;
+	white-space: nowrap;
+}
+
+.pp-analytics-navtab {
+	padding: 0.75rem 0.5rem 1rem 0.5rem;
+	margin: 0 0 0 1rem;
+	font-size: 1.1rem;
+	font-weight: 500;
+	text-decoration: none;
+	color: inherit;
+	border-bottom: 3px solid transparent;
+	white-space: nowrap;
+}
+
+.pp-analytics-navtab:hover {
+	color: var(--pp-color);
+}
+
+.pp-analytics-navtab:active,
+.pp-analytics-navtab:focus {
+	outline: none;
+}
+
+.pp-analytics-navtab-active {
+	border-bottom: 3px solid var(--pp-color);
+}
+
+.pp-analytics-tooltip {
+	display: flex;
+	margin-left: 0.5rem
+}
+
+.pp-analytics-tooltip-hidden {
+	margin-left: -85px;
+	margin-bottom: 0rem;
+	width: 150px;
+}
+
+.pp-analytics-tooltip-title {
+	margin: 0.25rem 0 0.5rem 0;
+}
+
+.pp-analytics-tooltip-content {
+	max-height: 20rem;
+	overflow-y: auto;
+	white-space: pre-line;
+	margin: 0;
+}
+
+.pp-analytics-button {
+	height: fit-content;
+	margin: 0 1rem !important;
+}
+
+.pp-analytics-payment-methods-row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.pp-analytics-payment-methods-row:first-child {
+	margin-bottom: 1.25rem;
+}
+
+.pp-analytics-graph-header {
+	display: flex;
+}
+
+.pp-analytics-graph-title {
+	width: fit-content;
+	font-size: 1.4rem;
+}
+
+.pp-analytics-graph-subtitle {
+	margin-left: auto;
+}
+
+.pp-analytics-graph-subtitle,
+.pp-analytics-currency-container {
+	display: flex;
+	align-items: center;
+}
+
+.pp-analytics-currency-container {
+	margin-left: 1rem;
+}
+
+.pp-analytics-graph-mode-text {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.pp-analytics-payment-methods-thin-graph,
+.pp-analytics-payment-methods-wide-graph,
+.pp-analytics-payment-methods-full-graph {
+	background-color: white;
+	padding: 0 2rem 0.5rem;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 0 4px rgb(0 0 0 / 10%);
+	border-radius: 6px;
+	margin: 5px;
+}
+
+.pp-analytics-payment-methods-thin-graph {
+	max-width: 300px;
+	min-width: 200px;
+	height: 363px;
+	flex: 1 1 auto;
+}
+
+.pp-analytics-payment-methods-wide-graph,
+.pp-analytics-payment-methods-full-graph {
+	width: 777px;
+	height: 363px;
+}
+
+.pp-analytics-payment-methods-full-graph {
+	margin: 0 auto 1rem;
+	background-color: white;
+}
+
+.pp-analytics-statistic-row {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 0 1rem 1rem 1rem;
+	background-color: white;
+	box-shadow: 0 1px 2px rgb(0 0 0 / 10%), 0 0 4px rgb(0 0 0 / 10%);
+	border-radius: 6px;
+}
+
+.pp-analytics-statistic-block {
+	margin: 0;
+	padding: 0 0.5rem;
+	text-align: center;
+}
+
+.pp-analytics-statistic-button-flex {
+	display: flex;
+	justify-content: space-evenly;
+	flex-grow: 2;
+}
+.pp-analytics-statistic-button-flex:hover {
+	background-color: rgb(204, 216, 255);
+	cursor: pointer;
+}
+
+.pp-analytics-statistic {
+	text-align: center;
+	opacity: 0.65;
+	font-size: 2rem;
+}
+
+.pp-analytics-modal {
+	display: block;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.4);
+}
+
+.pp-analytics-modal-content {
+	background-color: #fefefe;
+	margin: 15% auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 50%;
+}
+
+.pp-analytics-modal-title {
+	display: flex;
+	align-items: center;
+}
+
+.pp-analytics-modal-h1 {
+	line-height: 1em;
+}
+
+.pp-analytics-modal-close {
+	color: #aaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	margin-left: auto;
+}
+
+.pp-analytics-modal-close:hover,
+.pp-analytics-modal-close:focus {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 1381px) {
+	.pp-analytics-payment-methods-row {
+		justify-content: start;
+		align-items: start;
+	}
+
+	.pp-analytics-payment-methods-row:first-child {
+		margin-bottom: 0;
+	}
+
+	.pp-analytics-payment-methods-thin-graph,
+	.pp-analytics-payment-methods-wide-graph {
+		margin-bottom: 1.25rem;
+	}
+}
+
+@media only screen and (max-width: 782px) {
+	.auto-fold #wpcontent {
+		padding-left: 0;
+	}
+
+	.wp-responsive-open #wpbody {
+		right: -14.8em;
+	}
+
+	.pp-analytics-title {
+		font-size: 1.3rem;
+	}
+}
