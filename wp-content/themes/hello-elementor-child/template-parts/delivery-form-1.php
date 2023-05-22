@@ -180,7 +180,7 @@
 
     
     <input type="hidden" name="cart_cat_ids" value="<?php echo $cart_cat_ids; ?>" />
-    <input id="btn-shop-now" name="shop_now" type="submit" value="Shop Now">
+    <input id="btn-shop-now" name="shop_now" type="submit" value="Confirm">
   </div>
 </form>
 

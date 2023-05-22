@@ -590,6 +590,8 @@ function cupcake_admin_menu_bundle_product_callback(){
 
 function wct_bundle_product_function_callback(){
 	
+	
+	
 	// Delete a Specific Schedule if exist
 
 	/*if(wp_next_scheduled( 'wct_cron_hook_5_minutes' )){
@@ -600,6 +602,8 @@ function wct_bundle_product_function_callback(){
 	$cat_id = get_term_by('name', 'woosb', 'product_type');
 	
 	$cat_ids = array($cat_id->term_id);
+	
+	alog('Bundle Callback', $cat_ids,__FILE__,__LINE__);
 		
 	//$term_taxonomy_ids = wp_set_object_terms( $product_id, $cat_ids, 'product_type', true );
 	
@@ -611,15 +615,15 @@ function wct_bundle_product_function_callback(){
 		'post_type'             => 'product',
 		'post_status'			=> array('draft', 'publish'),
 		'ignore_sticky_posts'   => 1,
-		'posts_per_page'        => '120',
-		'tax_query'             => array(
+		'posts_per_page'        => '150',
+		/*'tax_query'             => array(
 			array(
 				'taxonomy'      => 'product_type',
 				'field' => 'term_id', //This is optional, as it defaults to 'term_id'
 				'terms'         => $cat_ids,
 				'operator'      => 'IN' // Possible values are 'IN', 'NOT IN', 'AND'.
 			),
-		)
+		)*/
 	);
 	
 	//$products = get_posts($args);
@@ -628,7 +632,7 @@ function wct_bundle_product_function_callback(){
 	
 	//var_dump($products);
 	
-	//alog('products', $products,__FILE__,__LINE__);
+	alog('products', $products,__FILE__,__LINE__); 
 	
 	if($products->have_posts()){
 		
@@ -705,7 +709,7 @@ function wct_bundle_product_function_callback(){
 				//echo "Passed <br />";
 				
 			} else {
-				
+				alog('Less than visibility Date', $product_id,__FILE__,__LINE__);
 				wp_update_post(array(
 					'ID'    =>  $product_id,
 					'post_status'   =>  'draft'

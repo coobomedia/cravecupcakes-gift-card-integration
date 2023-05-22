@@ -196,7 +196,55 @@ function wct_bakesheet_page()
 		<br class="clear" />
 
 		<div id="print_table">
+		<style>
+	@media print {
+.crave-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #55B7B3;
+    color: #FFF;
+	}
+ 
+		div#adminmenuwrap {
+    display: none;
+ 
+	}
+	div#wpadminbar {
+    display: none;
+}
+.crave-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 100px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+body {
+    
+    color: #3c434a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+   
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.crave-table td, .crave-table th {
+    border: 1px solid #ddd;
+ }
 
+}
+	</style>
 			<h2><?php esc_attr_e('Bake Sheet for ' . $category_name . ' Pre-orders: ' . date("D M d, Y", strtotime($from_date)) . ' to ' . date("D M d, Y", strtotime($to_date)), 'WpAdminStyle'); ?></h2>
 
 			<table class="crave-table">
@@ -258,6 +306,10 @@ function wct_bakesheet_page()
 				</tr>
 
 			</table>
+
+
+
+
 
 <!-- bakeshop table  -->
 <table class="crave-table" >
@@ -591,7 +643,55 @@ function wct_get_get_bakesheet_callback()
 	<br class="clear" />
 
 	<div id="print_table">
+	<style>
+	@media print {
+.crave-table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #55B7B3;
+    color: #FFF;
+	}
+ 
+		div#adminmenuwrap {
+    display: none;
+ 
+	}
+	div#wpadminbar {
+    display: none;
+}
+.crave-table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 100px;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: gray;
+}
+body {
+    
+    color: #3c434a;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    font-size: 13px;
+    line-height: 1.4em;
+   
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+.crave-table td, .crave-table th {
+    border: 1px solid #ddd;
+ }
 
+}
+	</style>
 		<h2><?php esc_attr_e('Bake Sheet for ' . $category_name . ' Pre-orders: ' . date("D M d, Y", strtotime($from_date)) . ' to ' . date("D M d, Y", strtotime($to_date)), 'WpAdminStyle'); ?></h2>
 
 		<table class="crave-table">
@@ -811,15 +911,16 @@ function get_bakesheet_backend_js()
 
 			newWin.document.open();
 
-			newWin.document.write('<html><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
+			newWin.document.write('<html><style>@media print {.crave-table th {padding-top: 12px;padding-bottom: 12px;text-align: left;background-color: #55B7B3;color: #FFF;}}</style><body onload="window.print()">' + divToPrint.innerHTML + '</body></html>');
 
 			newWin.document.close();
 
 			setTimeout(function() {
 				newWin.close();
-			}, 10);
+			}, 100);
 
 		}
+		 
 		// function printData()
 		// {
 		//   /* var divToPrint=document.getElementById("print_table");
